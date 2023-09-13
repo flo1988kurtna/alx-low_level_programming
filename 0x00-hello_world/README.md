@@ -1,3 +1,4 @@
+
 0. Preprocessor
 Write a script that runs a C file through the preprocessor and save the result into another file.
 1. Compiler
@@ -16,3 +17,6 @@ You should produce the exact same output as in the example
 Warnings are allowed
 Your program should return 0
 You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+Task zero
+
+
