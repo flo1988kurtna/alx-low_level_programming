@@ -8,14 +8,11 @@
  */
 int print_last_digit(int n)
 {
-    int last_digit;
+	if (n < 0)
+		n = -n; /* Make sure it's positive */
 
-    last_digit = n % 10; /* Calculate the last digit */
-
-    if (last_digit < 0)
-        last_digit = -last_digit; /* Make sure it's positive */
-
-    _putchar('0' + last_digit); /* Print the last digit */
-    return (last_digit);
+	int last_digit = n % 10; /* Calculate the last digit */
+	_putchar('0' + last_digit); /* Print the last digit */
+	return (last_digit);
 }
 
