@@ -12,6 +12,7 @@ int print_last_digit(int n)
 		n = -n; /* Make sure it's positive */
 
 	int last_digit = n % 10; /* Calculate the last digit */
+
 	_putchar('0' + last_digit); /* Print the last digit */
 	return (last_digit);
 }
