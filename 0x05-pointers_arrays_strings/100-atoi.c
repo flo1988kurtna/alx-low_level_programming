@@ -4,46 +4,23 @@
  * _atoi - Converts a string to an integer.
  * @s: The input string.
  *
- * Return: The integer value of the string.
+ * Return: The integer value converted from the string.
  */
 int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
-	int digit;
+	int i = 0;
 
-	while (*s)
+	while (s[i] != '\0')
 	{
-		if (*s == '-')
-		{
-			sign = -1;
-		}
-		else if (*s >= '0' && *s <= '9')
-		{
-			digit = *s - '0';
-
-			/* Check for integer overflow */
-			if (result > (INT_MAX - digit) / 10)
-			{
-				if (sign == 1)
-					return (INT_MAX);
-				else
-					return (INT_MIN);
-			}
-
-			result = result * 10 + digit;
-		}
-		else if (*s == '+')
-		{
-			/* Handle the '+' sign */
-		}
-		else if (result != 0)
-		{
-			/* Stop parsing if non-digit characters appear after a number */
+		if (s[i] == '-')
+			sign *= -1;
+		else if (s[i] >= '0' && s[i] <= '9')
+			result = result * 10 + (s[i] - '0');
+		else if (result > 0)
 			break;
-		}
-
-		s++;
+		i++;
 	}
 
 	return (result * sign);
