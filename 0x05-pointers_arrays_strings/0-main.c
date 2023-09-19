@@ -2,9 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - check the code 
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: This function initializes an integer, updates it,
+ * and prints the new value.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,5 +17,7 @@ int main(void)
     printf("n=%d\n", n);
     reset_to_98(&n);
     printf("n=%d\n", n);
+
     return (0);
 }
+
