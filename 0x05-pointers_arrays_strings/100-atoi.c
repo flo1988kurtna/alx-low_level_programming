@@ -1,43 +1,38 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _atoi - Converts a string to an integer.
- * @s: The input string.
- *
- * Return: The integer value converted from the string.
+ * _atoi - convert a stringto an integer.
+ * @s: The pointer to convert
+ * Return: A integer
  */
+
 int _atoi(char *s)
-{
-	int sign = 1;
-	int result = 0;
-	int i = 0;
 
-	while (s[i] != '\0')
+{
+
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isis =0;
+
+	while (s[c])
 	{
-		if (s[i] == '-')
-			sign *= -1;
-		else if (s[i] >= '0' && s[i] <= '9')
-			result = result * 10 + (s[i] - '0');
-		else if (result > 0)
-			break;
-		i++;
+	if (s[c] == 45)
+	{
+	min *= -1;
 	}
-
-	return (result * sign);
+	while (s[c] >= 48 && s[c] <= 57)
+	}
+	isi = 1;
+	ni = (ni *10) +(s[c] - '0');
+	c++;
+	}
+	if (isi == 1)
+	{
+	break;
+	}
+	c++
+	}
+	ni *=min;
+	return (n);
 }
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int n;
-
-	n = _atoi("-2147483648");
-	printf("%d\n", n);
-	return (0);
-}
-
