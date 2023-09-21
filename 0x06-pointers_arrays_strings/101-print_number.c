@@ -4,7 +4,7 @@
  * print_number - Prints an integer.
  * @n: The integer to be printed.
  *
- * Return: void
+ * Description: This function prints an integer using only _putchar.
  */
 void print_number(int n)
 {
