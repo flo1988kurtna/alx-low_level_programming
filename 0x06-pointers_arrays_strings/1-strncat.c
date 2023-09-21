@@ -29,6 +29,6 @@ char *_strncat(char *dest, char *src, int n)
 
 	dest[dest_len] = '\0'; /* Null-terminate the concatenated string */
 
-	return dest;
+	return (dest); /* Properly parenthesized return statement */
 }
 
