@@ -28,6 +28,6 @@ char *_strcat(char *dest, char *src)
     /* Null-terminate the concatenated string */
     *ptr = '\0';
 
-    return dest;
+    return (dest); // Added parentheses for clarity
 }
 
