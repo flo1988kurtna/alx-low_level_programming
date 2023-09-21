@@ -15,6 +15,7 @@ char *leet(char *str)
 	while (*ptr)
 	{
 		int i = 0;
+
 		while (leet_replace[i])
 		{
 			if (*ptr == leet_replace[i])
@@ -24,6 +25,7 @@ char *leet(char *str)
 			}
 			i++;
 		}
+
 		ptr++;
 	}
 
