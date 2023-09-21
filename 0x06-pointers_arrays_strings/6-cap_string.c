@@ -33,6 +33,6 @@ char *cap_string(char *str)
 		}
 	}
 
-	return str;
+	return (str); /* Properly parenthesized return statement */
 }
 
