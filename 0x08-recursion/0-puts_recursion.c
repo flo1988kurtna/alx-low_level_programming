@@ -6,13 +6,13 @@
  */
 void _puts_recursion(char *s)
 {
-    if (*s == '\0')
-    {
-        _putchar('\n');
-        return;
-    }
+	if (*s == '\0') /* Check if we have reached the end of the string (null terminator) */
+	{
+		_putchar('\n'); /* Print a newline character to complete the line */
+		return;
+	}
 
-    _putchar(*s);
-    _puts_recursion(s + 1);
+	_putchar(*s); /* Print the current character */
+	_puts_recursion(s + 1); /* Move to the next character in the string */
 }
 

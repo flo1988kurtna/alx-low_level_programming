@@ -1,10 +1,13 @@
-#include <unistd.h>
-/**
- * This is my _putchar.c
- */
+#include "main.h"
 
-int _putchar(char c)
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	return write(STDOUT_FILENO, &c, 1);
+    _puts_recursion("Puts with recursion");
+    return (0);
 }
 
